@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		    <meta name="description" content="My most recent and up to date portfolio of work.
+		I am always learning new skills and technologies, any new projects that I create will be on here soon.">
+	    <meta name="keywords" content="AspNet,.Net Core,C#,HTML,CSS,JavaScript,Portfolio,Massa,Panalyx">
+	    <meta name="author" content="Massa">
+	    <meta charset="utf-8" />
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	    <title>About Me</title>
+	    <!--compatibility to IE browser-->
+	    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+	    <link rel="stylesheet" href="bootstrap.min.css" />
+	    <link rel="stylesheet" href="site.css" />
+
+	    <!-- Font Awsome-->
+	    <script src="https://kit.fontawesome.com/ce47c016ec.js" crossorigin="anonymous"></script>
+	    <!-- Bootstrap CSS -->
+	    
+	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	    <!-- jQuery -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	    <!-- <My css"> -->
+	    <link rel="stylesheet" type="text/css" href="style.css">
+	    <!-- Google Font -->
+	    <link href="https://fonts.googleapis.com/css?family=Forum&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+	    <link hhref="https://fonts.googleapis.com/css?family=Cabin+Sketch:700|Patrick+Hand+SC|Waiting+for+the+Sunrise" rel="stylesheet" type="text/css" />
+	</head>
+
+	<body>
+	    <div id="container">
+	        <!-- navigation bar-->
+	        <nav class="navbar navbar-expand-md .bg-transparent">
+	            <!-- Store logo -->
+	            <!-- <a href="home.html" class="navbar-brand"><i class="fas fa-store fa-2x" style="color: blue"></i></a> -->
+	            <a asp-controller="Home" asp-action="Index" class="navbar-brand"><img src="images/logo.png" alt="logo" height="60" width="90"></a>
+	            <button type="button" class="navbar-toggler ml-auto custom-toggler" data-toggle="collapse" data-target="#nav" name="button">
+	                <span class="navbar-toggler-icon"></span>
+	            </button>
+
+	            <div class="collapse navbar-collapse justify-content-between" id="nav">
+	                <ul class="navbar-nav">
+	                    <li class="nav-item"><a class="nav-link  text-uppercase font-weight-bold px-3" href="">ABOUT</a></li>
+
+	                    <li class="nav-item dropdown">
+	                        <a class="nav-link text-uppercase font-weight-bold px-3" href="https://panalyx.com">projects</a>
+
+	                        <ul class="dropdown-menu" style="position:static">
+	                            <li><a class="dropdown-item text-primary font-weight-bold px-2" href="https://panalyx.com">Arrays & File I/O</a></li>
+	                            <li><a class="dropdown-item text-primary font-weight-bold px-2" href="https://panalyx.com">Coffee Order App</a></li>
+	                            <li><a class="dropdown-item text-primary font-weight-bold px-2" href="https://panalyx.com">Help Desk App</a></li>
+	                        </ul>
+	                    </li>
+
+	                    <li class="nav-item"><a href="https://panalyx.com" class="nav-link  text-uppercase font-weight-bold px-3">games</a></li>
+
+	                    <li class="nav-item"><a href="https://panalyx.com" class="nav-link  text-uppercase font-weight-bold px-3">contact</a></li>
+	                    <li class="nav-item"><a href="https://panalyx.com" class="nav-link  text-uppercase font-weight-bold px-3 text-warning">shop</a></li>
+
+
+	                    <li class="nav-item"><a href="https://panalyx.com" class="nav-link  text-uppercase font-weight-bold px-3 text-warning">admin</a></li>
+	                </ul>
+	                
+	                <ul class=" navbar-nav navbar-right">
+	                    <li class="nav-item nav-right"><a href="https://panalyx.com" class="nav-link text-uppercase font-weight-bold px-3"><i class="fa fa-sign-in" aria-hidden="true"></i> Login &ensp;&ensp;</a></li>
+
+	                    <li class="nav-item nav-right"><a href="https://panalyx.com" class="nav-link  text-uppercase font-weight-bold px-3"> <i class="fa fa-user fa-lg"></i> Register</a></li>
+					</ul>
+	            </div>
+	        </nav>	       
+
+	        <div class="back-img" loading="lazy">
+	            <div class="animated">
+	                <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+	                    <a class="weatherwidget-io" href="https://forecast7.com/en/51d05n114d07/calgary/" data-label_1="CALGARY" data-label_2="WEATHER" data-icons="Climacons Animated" data-days="3" data-theme="weather_one">CALGARY WEATHER</a>
+	                </div>
+	            </div>
+
+			 <div id="body">
+			  <div id="container" class="container">
+
+			                    <section>
+			                        <br />
+
+			                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="8000">
+			                            <ol class="carousel-indicators">
+			                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+			                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+			                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+			                            </ol>
+			                            <div class="carousel-inner">
+			                                <div class="carousel-item active">
+			                                    <h4 class="text-center text-primary">Console App - Arrays & File I/O</h4>
+			                                    <a href="https://panalyx.com">
+			                                        <img class="d-block w-100 img-responsive" src="images/OneDrive/portfolio image 09.jpg" alt="First slide">
+			                                        <div class="carousel-caption d-none d-md-block myCaroussel">
+
+			                                            <p>a C# program for a quality assurance grading system. The program will display a menu that enables the tester to choose whether they want to view all test records or view only the records of a specific test by the entering test id</p>
+			                                            <p class="text-primary font-weight-bold">Continue... </p>
+			                                        </div>
+			                                    </a>
+			                                </div>
+			                                <div class="carousel-item">
+			                                    <h4 class="text-center text-primary">Coffee Order App</h4>
+			                                    <a href="https://panalyx.com">
+			                                        <img class="d-block w-100 img-responsive" src="images/Project/Robot-Order.jpg" alt="Second slide">
+			                                        <div class="carousel-caption d-none d-md-block myCaroussel">
+
+			                                            <p>developing forms and web pages that people can use to register an account and sign in to submit their coffee order. When the form is successfully submitted, it redirects the user to a confirmation form that reads the information entered by the user from the database</p>
+			                                            <p class="text-primary font-weight-bold">Continue... </p>
+			                                        </div>
+			                                    </a>
+			                                </div>
+			                                <div class="carousel-item">
+			                                    <h4 class="text-center text-primary">Help Desk App</h4>
+			                                    <a href="https://panalyx.com">
+			                                        <img class="d-block w-100 img-responsive" src="images/OneDrive/portfolio image 08.jpg" alt="Third slide">
+			                                        <div class="carousel-caption d-none d-md-block myCaroussel">
+
+			                                            <span>Developing an Help-desk app with PowerApps that supports CRUD to SharePoint Lists using:</span>
+			                                            <ul>
+			                                                <li class="text-left">Microsoft PowerAutomate (Flow) to send email and update Product inventories</li>
+			                                                <li class="text-left">Authentication and Authorization</li>
+			                                                <li class="text-left">Customized Client Dashboard</li>
+			                                                <li class="text-left">Power BI to display reports in PowerApps</li>
+			                                            </ul>
+			                                            <p class="text-primary font-weight-bold">Continue... </p>
+			                                        </div>
+			                                    </a>
+			                                </div>
+			                            </div>
+			                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+			                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			                                <span class="sr-only">Previous</span>
+			                            </a>
+			                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+			                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			                                <span class="sr-only">Next</span>
+			                            </a>
+			                        </div>
+								</section>
+				                    <br /><br>
+
+			    <div class="pages">
+			        <div id="more" class="moreSection animated fadeInLeft">
+			            <div class="readMoreFlex">
+			                <!-------------------About Me-------------------->
+			                <div id="contact" class="page-contact page">
+			                    <div class="back-img" loading="lazy">
+			                        <h1 class="animated fadeInDown">About Me</h1>
+			                    </div>
+
+			                    <div id="about" class="page-about page">		                        
+			                        <div class="inner-container">
+			                            <h2 class="text-lg-center text-primary">Hi! My name is Massa</h2>
+			                            <div class="login100-form-avatar">
+			                                 <img src="images/avatar-01.jpg" alt="AVATAR">
+			                            </div>
+			                            <br />
+			                            <p class="head-line">
+			                                I’m a Full Stack Developer with a passion for Artificial Intelligence, Microsoft Technology and Web/App Security.
+			                                Eager to create modern, smart, safe, and intuitive systems.
+			                            </p>
+			                            <div class="underline animated fadeInUp"></div>
+			                            <div class="about-grid">
+			                                <p>
+			                                    I graduated from <a style="color:#007bff !important" href="http://www.supdeco.sn/">SUPDECO</a> Dakar (Senegal, Africa) with a Master of Science in Accounting, Auditing and Management Control.
+			                                    I worked at <a style="color:#007bff !important" href="www.ccbm.sn">CCBM Group</a> as Accounting Manager (11 mos) then Chief Accounting Officer (1 yr 7 mos).
+			                                    After that, I moved in a big company called <a href="https://publicomsenegal.wordpress.com/" style="color:#007bff !important">PUBLICOM</a> as Chief Financial Officer (3 yrs 6 mos). <br><br>
+			                                    As a child I always enjoyed making things and taking things apart while also gravitating towards technology and computers as I got older.
+			                                    I first focused on hardware (assembling desktops, upgrading memories, troubleshooting laptops, building my own gaming PC...).
+			                                    When I started my professional career as an Accountant, I was more interested in software (installing Os, drivers, financial and accounting software, modern games...).
+			                                    It wasn’t until taking Computing class at <a style="color:#007bff !important" href="https://innotechcollege.com/">INNOTECH</a> that I realise what I really enjoyed was programming and using code to create applications.
+			                                    Since then I have learnt a lot through multiple school's projects and investing my spare time to better my knowledge in different technologies.<br /><br />
+			                                    I am passionate about Artificial Intelligence, specially, Machine Learning and Business Automation.<br />
+			                                    Skills: Self-thaught, fast-learner and problem-solver. <br />
+			                                    Goals: Build the Next-Gen Business Intelligence.<br><br>
+			                                    I have included a list of some languages and technologies that I have gained a really strong understanding over the last year.
+			                                </p>
+			                                <div class="skills-img">
+			                                    <span class="skill-img asp"><img src="images/skills/iconfinder_ASP.Net_682703.png" title="ASP.Net" /></span>
+			                                    <span class="skill-img mysql"><img src="images/skills/iconfinder_MySQL_1012821.png" title="MySQL" /></span>
+			                                    <span class="skill-img azure"><img src="images/skills/icons8-azure-50.png" title="AZURE" /></span>
+			                                    <span class="skill-img html5"><img src="images/skills/icons8-html-5-50.png" title="HTML" /></span>
+			                                    <span class="skill-img cs"><img src="images/skills/icons8-c-sharp-logo-50.png" title="Csharp" /></span>
+			                                    <span class="skill-img cs"><img src="images/skills/icons8-python-48.png" title="Python" /></span>
+			                                    <span class="skill-img css"><img src="images/skills/icons8-css3-50.png" title="CSS" /></span>
+			                                    <span class="skill-img js"><img src="images/skills/icons8-javascript-50.png" title="JAVASCRIPT" /></span>  
+			                                    <span class="skill-img flow"><img src="images/skills/microsoft-flow.png" title="MsFlow - POWER AUTOMATE" /> </span>                                
+			                                    <span class="skill-img powerapps"><img src="images/skills/PowerApps_3860341.png" title="POWER APP" /></span>                     
+			                                    <span class="skill-img sharepoint"><img src="images/skills/icons8-microsoft-sharepoint-2019-50.png" title="SHAREPOINT" /></span>
+			                                    <span class="skill-img sql"><img src="images/skills/icons8-microsoft-sql-server-50.png" title="SQL SERVER" /></span>			                                    
+			                                    <span class="skill-img office365"><img src="images/skills/icons8-office-365-50.png" title="OFFICE 365" /></span>
+			                                    <span class="skill-img powerbi"><img src="images/skills/icons8-power-bi-50.png" title="POWER BI" /></span>
+			                                    <span class="skill-img react"><img class="social-footer" src="images/skills/icons8-react-50.png" title="REACT" /></span>
+			                                    <span class="skill-img vs"><img src="images/skills/icons8-visual-studio-2019-50.png" title="VISUAL STUDIO" /></span>
+			                                </div>
+			                                <br />
+			                            </div>
+
+<div class="col-md-12">
+                            <h2>Follow Me</h2>
+                            <ul>
+                                <div class="skills-img">
+                                    <div class="skill-img asp">
+                                        <a title="Icons made by https://www.flaticon.com/authors/pixel-perfect Pixel perfect. from https://www.flaticon.com/" href="https://twitter.com/panalyx" target="_blank"> <img src="images/twitter.png" alt="Twitter Logo" /> </a>
+                                    </div>
+
+                                    <div class="skill-img mysql">
+                                        <a href="https://www.linkedin.com/company/ai-panalyx" target="_blank"> <img src="images/linkedin.png" alt="Linkedin Logo" /> </a>
+                                    </div>
+
+                                    <div class="skill-img az">
+                                        <a href="https://www.facebook.com/Panalyx-107354167669131" target="_blank"> <img src="images/facebook.png" alt="Facebook Logo" /> </a>
+                                    </div>
+
+                                    <div class="skill-img asp">
+                                        <a title="Icons made by https://www.flaticon.com/authors/pixel-perfect Pixel perfect. from https://www.flaticon.com/" href="https://www.youtube.com/channel/UCfcvo-llgB5ezSow9x_FLhg" target="_blank"> <img src="images/youtube.png" alt="Youtube Logo" /> </a>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+
+
+			                            <p>
+			                                If you would like to know more about my skills and experience, please don't hesitate to visit my  Website
+			                                <a class="text-primary" href="https://panalyx.com">panalyx.com</a>.
+			                            </p>
+			                        </div>
+			                    </div>
+			                </div>
+			                </div>
+			            </div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	 	<footer>
+	        <hr style="border-top: 1px solid burlywood" />
+	        <p class="lead text-center">
+	            &copy; 2020 - Panalyx by Massa - <a href="https://panalyx.com">Privacy</a>
+	        </p>
+	    </footer>
+	   
+
+		<script src="script.js"></script>
+		<script src="bootstrap.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	</body>
+</html>
